@@ -13,14 +13,14 @@
 ActiveRecord::Schema.define(version: 2020_12_12_162057) do
 
   create_table "favorites", force: :cascade do |t|
-    t.string "game"
+    t.integer "game_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["game_id"], name: "index_favorites_on_game_id"
   end
 
   create_table "games", force: :cascade do |t|
-    t.string "favorite"
-    t.string "name"
+    t.string "title"
     t.string "background_image"
     t.string "rating"
     t.string "ratings_count"
