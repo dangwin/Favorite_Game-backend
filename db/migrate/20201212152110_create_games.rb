@@ -7,6 +7,7 @@ class CreateGames < ActiveRecord::Migration[6.0]
       t.string :ratings_count
       t.string :platforms
       t.string :genres
+      t.string :link
 
       t.timestamps
     end

@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2020_12_12_162057) do
     t.string "ratings_count"
     t.string "platforms"
     t.string "genres"
+    t.string "link"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
